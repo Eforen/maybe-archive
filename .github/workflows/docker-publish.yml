@@ -23,7 +23,7 @@ jobs:
     
     - name: "Client: Build docker image"
       run: |
-        cd client; docker build . -t eforen/maybe-old-client:latest
+        cd apps/client; docker build . -t eforen/maybe-old-client:latest
     
     - name: "Client: Push docker image to DockerHub"
       run: |
@@ -31,7 +31,7 @@ jobs:
     
     - name: "Server: Build docker image"
       run: |
-        cd server; docker build . -t eforen/maybe-old-server:latest
+        cd apps/server; docker build . -t eforen/maybe-old-server:latest
     
     - name: "Server: Push docker image to DockerHub"
       run: |
@@ -39,7 +39,7 @@ jobs:
     
     - name: "Workers: Build docker image"
       run: |
-        cd workers; docker build . -t eforen/maybe-old-workers:latest
+        cd apps/workers; docker build . -t eforen/maybe-old-workers:latest
     
     - name: "Workers: Push docker image to DockerHub"
       run: |
