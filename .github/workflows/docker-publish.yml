@@ -1,6 +1,6 @@
 name: Build n Upload Docker Image
 
-on:
+on: 
   push:
     branches: [ master ]
   pull_request:
