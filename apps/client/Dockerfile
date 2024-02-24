@@ -6,7 +6,7 @@ FROM node:18-alpine3.18 as builder
 WORKDIR /app
 COPY ./dist/apps/client ./prisma ./package.json ./
 # Install dependencies
-RUN npm install --legacy-peer-deps --production=false
+RUN npm install --false --production=false
 
 # ------------------------------------------
 #                PROD STAGE               
