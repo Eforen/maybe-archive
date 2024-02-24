@@ -62,14 +62,14 @@ Maybe uses [Teller](https://teller.io/) for connecting financial accounts. To ge
 -   Webhooks are not implemented yet, but you can populate the `NX_TELLER_SIGNING_SECRET` with the value from your Teller account.
 -   We highly recommend checking out the [Teller docs](https://teller.io/docs) for more info.
 
-Then run the following pnpm commands:
+Then run the following npm commands:
 
 ```shell
-pnpm install
-pnpm run dev:services:all
-pnpm prisma:migrate:dev
-pnpm prisma:seed
-pnpm dev
+npm install
+npm run dev:services:all
+npm prisma:migrate:dev
+npm prisma:seed
+npm dev
 ```
 
 ## Set Up Ngrok
@@ -91,7 +91,7 @@ To do so:
 2. Click on Create Domain
 3. Copy the domain and paste it into your `.env` file: `NGROK_DOMAIN=your_domain`
 
-That's it! As long as you run the project locally using `docker` with `pnpm dev:services:all` you'll be good to go.
+That's it! As long as you run the project locally using `docker` with `npm dev:services:all` you'll be good to go.
 
 ## External data
 
