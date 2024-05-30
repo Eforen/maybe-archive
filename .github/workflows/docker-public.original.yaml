@@ -66,7 +66,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile --production=false
+        run: npm install --frozen-lockfile --production=false --legacy-peer-deps --force
 
       - name: Run nx target
         run: npx nx run ${{ matrix.nx }}
